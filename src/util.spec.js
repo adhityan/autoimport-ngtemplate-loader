@@ -16,7 +16,7 @@ const {
     differentPath2Replaced
 } = require('./testdata');
 
-const variableName = 'autoNgTemplateLoaderTemplate';
+const variableName = 'autoImportNgTemplateLoaderTemplate';
 
 
 test('replaceTemplateUrl returns the file if there is not a template', (t) => {

@@ -1,6 +1,6 @@
 const test = require('ava');
 
-const loader = require('./auto-ngtemplate-loader');
+const loader = require('./autoimport-ngtemplate-loader');
 const { testDirective1, testDirective1Replaced } = require('./testdata');
 
 test('loader works on files that need templates replaced', (t) => {

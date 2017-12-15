@@ -1,12 +1,11 @@
-[![npm version](https://badge.fury.io/js/auto-ngtemplate-loader.svg)](https://badge.fury.io/js/auto-ngtemplate-loader)
-[![Build Status](https://travis-ci.org/YashdalfTheGray/auto-ngtemplate-loader.svg?branch=master)](https://travis-ci.org/YashdalfTheGray/auto-ngtemplate-loader)
+[![npm version](https://badge.fury.io/js/autoimport-ngtemplate-loader.svg)](https://badge.fury.io/js/autoimport-ngtemplate-loader)
 
-# auto-ngtemplate-loader
+# autoimport-ngtemplate-loader
 Auto require AngularJS 1.x templates in Webpack style
 
 ## Usage
 
-Install the package by running `npm install auto-ngtemplate-loader`. Once installed, you can add it to your Webpack config.
+Install the package by running `npm install autoimport-ngtemplate-loader`. Once installed, you can add it to your Webpack config.
 
 ```js
 module.exports = {
@@ -15,7 +14,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: ['babel-loader', 'other-loaders', 'auto-ngtemplate-loader']
+                use: ['babel-loader', 'other-loaders', 'autoimport-ngtemplate-loader']
             }
         ]
     }
@@ -58,7 +57,7 @@ This module supports configuration through either the `options` object method or
 
 | Name           | Type     | Default Value                  | Details                                                                                                                      |
 |----------------|----------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| `variableName` | `string` | `autoNgTemplateLoaderTemplate` | The variable name that gets injected into the compiled code. This is included so that variable collisions can be prevented.  |
+| `variableName` | `string` | `autoImportNgTemplateLoaderTemplate` | The variable name that gets injected into the compiled code. This is included so that variable collisions can be prevented.  |
 
 ## Development
 

@@ -27,7 +27,7 @@ const testDirective1 = `angular.module('test')
     }
 }));`;
 
-const testDirective1Replaced = (varName = 'autoNgTemplateLoaderTemplate') =>
+const testDirective1Replaced = (varName = 'autoImportNgTemplateLoaderTemplate') =>
 `const ${varName}1 = require('./myTemplate.html');
 
 angular.module('test')
@@ -53,7 +53,7 @@ const testDirective2 = `angular.module('test')
     templateUrl:'anotherTemplate.html'
 }));`;
 
-const testDirective2Replaced = (varName = 'autoNgTemplateLoaderTemplate') =>
+const testDirective2Replaced = (varName = 'autoImportNgTemplateLoaderTemplate') =>
 `const ${varName}1 = require('./anotherTemplate.html');
 
 angular.module('test')
@@ -78,7 +78,7 @@ angular.module('test2')
     templateUrl: 'helloWorldAgain.html'
 }));`;
 
-const multipleDirectivesReplaced = (varName = 'autoNgTemplateLoaderTemplate') =>
+const multipleDirectivesReplaced = (varName = 'autoImportNgTemplateLoaderTemplate') =>
 `const ${varName}1 = require('./helloWorld.html');
 const ${varName}2 = require('./helloWorldAgain.html');
 
@@ -103,7 +103,7 @@ const differentPath1 = `angular.module('test')
     }
 }));`;
 
-const differentPath1Replaced = (varName = 'autoNgTemplateLoaderTemplate') =>
+const differentPath1Replaced = (varName = 'autoImportNgTemplateLoaderTemplate') =>
 `const ${varName}1 = require('../html/myTemplate.html');
 
 angular.module('test')
@@ -128,7 +128,7 @@ const differentPath2 = `angular.module('test')
     }
 }));`;
 
-const differentPath2Replaced = (varName = 'autoNgTemplateLoaderTemplate') =>
+const differentPath2Replaced = (varName = 'autoImportNgTemplateLoaderTemplate') =>
 `const ${varName}1 = require('./html/myTemplate.html');
 
 angular.module('test')

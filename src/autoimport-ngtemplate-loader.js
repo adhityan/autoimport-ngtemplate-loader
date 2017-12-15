@@ -4,8 +4,8 @@ const { isValid } = require('var-validator');
 
 const { replaceTemplateUrl } = require('./util');
 
-module.exports = function autoNgTemplateLoader(source, map) {
-    const { variableName = 'autoNgTemplateLoaderTemplate' } = loaderUtils.getOptions(this) || {};
+module.exports = function autoImportNgTemplateLoader(source, map) {
+    const { variableName = 'autoImportNgTemplateLoaderTemplate' } = loaderUtils.getOptions(this) || {};
 
     if (!isValid(variableName)) {
         this.callback(new Error('Specified variable name is not valid'), null, null);

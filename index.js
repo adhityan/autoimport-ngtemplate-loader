@@ -1,1 +1,1 @@
-module.exports = require('./src/auto-ngtemplate-loader');
+module.exports = require('./src/autoimport-ngtemplate-loader');
